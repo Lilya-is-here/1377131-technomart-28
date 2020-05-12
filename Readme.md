@@ -1,6 +1,6 @@
 # Личный проект «Техномарт»
 
-* Студент: [Лилия Илюшкина](https://up.htmlacademy.ru/htmlcss/28/user/1377131).
+* Студент: [Лилия Илюшкина ^.^](https://up.htmlacademy.ru/htmlcss/28/user/1377131).
 * Наставник: [Татьяна Симоненко](https://up.htmlacademy.ru/htmlcss/28/user/6613).
 
 ---
