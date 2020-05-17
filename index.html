@@ -20,18 +20,18 @@
     <a href="blank.html">Корзина:0 </a>  
     <a href="blank.html">Оформить заказ</a> 
    
-    <p> Интернет-магазин <br>
+    <h1> Интернет-магазин <br>
        строительных материалов <br>
         и инструментов для ремонта 
-    </p> 
+    </h1>  <!-- Добавила заголовок h1 -->
 
     <a href="tel.+78125550555">+7 (812) 555-05-55</a> 
     <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
     <ul>
-      <li> <a href="blank.html">Войти</a> </li> <!-- включать ли Войти и Регистрация в nav? -->
+      <li> <a href="blank.html">Войти</a> </li> 
       <li>  <a href="blank.html">Регистрация</a> </li>
-    </ul>
+    </ul> <!-- Оставила отдельно от nav -->
   
       <nav>
       <ul>
@@ -47,26 +47,130 @@
   </header>
   
   <main>
-    <h1>Компания «Техномарт»</h1> <!-- Визуально скрытый заголовок -->
-
+  
 <!-- Каталог -->
 <section>
 
-  <h2>Каталог</h2> <!-- Скрытый заголовок -->
+  <h2>Список товаров и услуг</h2> <!-- Скрытый заголовок -->
+
+<ul>
+  <li>
+    <h3>Материалы</h3>
+   <a href="blank.html">На любой вкус</a>
+   <!-- иконка -->
+  </li>
+  <li>
+    <h3>Инструмент</h3>
+    <a href="blank.html">На все случаи</a>
+     <!-- иконка -->
+  </li>
+  <li>
+    <h3>Техника</h3>
+    <a href="blank.html">Для стройки</a>
+     <!-- иконка -->
+  </li>
+  <li>
+    <h3>Скидки 50%</h3>
+    <a href="blank.html">На 350 товаров</a>
+     <!-- иконка -->
+  </li>
+  <li>
+    <h3>Доставка</h3>
+    <a href="blank.html">Бесплатно</a>
+     <!-- иконка -->
+  </li>
+</ul>
+
+<!-- ДРЕЛИ  включать ли этот блок в список, или он будет отдельно?-->
 
 </section>
 
 <!-- Популярные товары -->
 <section>
 
-  <h2>Популярные товары</h2>
+  <h2>Популярные товары:</h2>
+<a href="blank.html">Все популярные товары</a> <!-- Эта ссылка не ведет на каталог? -->
+  <ul>
+    <li>
+        <a href="product.html">
+           
+            <p>
+              <img src="img/product-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
+            </p>
+          </a>
+          <h3>Перфоратор BOSCH BFG 9000</h3>
+          <p>
+            <span>32500 Р.</span>
+            <span>25500 Р.</span> 
+          </p>
+    </li>
+
+    <li>
+        <a href="product.html">
+           
+            <p>
+              <img src="img/product-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
+            </p>
+          </a>
+          <h3>Перфоратор BOSCH BFG 3000</h3>
+          <p>
+            <span>22500 Р.</span>
+            <span>15500 Р.</span>
+          </p>
+
+    </li>
+
+   
+    <li>
+      <a href="product.html">
+         
+          <p>
+            <img src="img/product-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+          </p>
+        </a>
+        <h3>Перфоратор BOSCH BFG 6000</h3>
+        <p>
+          <span>30500 Р.</span>
+          <span>25500 Р.</span> 
+        </p>
+
+  </li>
+  
+  <li>
+    <a href="product.html">
+       
+        <p>
+          <img src="img/product-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
+        </p>
+      </a>
+      <h3>Перфоратор BOSCH BFG 2000</h3>
+      <p>
+        <span>Место для скидки </span> <!-- У этого перфоратора нет скидки , тут надо оставлять место для будущей скидки или полностью span убрать? -->
+        <span>12500 Р.</span> 
+      </p>
+
+</li>
+  </ul>
 
 </section>
 
 <!-- Популярные производители -->
 <section>
   
-  <h2>Популярные производители</h2>
+  <h2>Популярные производители:</h2>
+
+  <a href="catalog.html">Открыть каталог</a>
+
+  <ul>
+    <li><img src="img/producer-1.jpg" width="220" height="145" alt="BOSCH"></li>
+    <li><img src="img/producer-1.jpg" width="220" height="145" alt="Makita"></li>
+    <li><img src="img/producer-1.jpg" width="220" height="145" alt="DeWalt"></li>
+    <li><img src="img/producer-1.jpg" width="220" height="145" alt="Интерскол"></li>
+    <li><img src="img/producer-1.jpg" width="220" height="145" alt="HITACHI"></li>
+    <li><img src="img/producer-1.jpg" width="220" height="145" alt="LG"></li>
+    <li><img src="img/producer-1.jpg" width="220" height="145" alt="AEG Power Solutions"></li>
+    <li><img src="img/producer-1.jpg" width="220" height="145" alt="METABO"></li>
+  </ul>
 
 </section>
 
@@ -74,14 +178,26 @@
 <section>
   
   <h2>Сервисы</h2>
+<p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
+  Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+  <ul>
+    <li><a href="blank.html">Доставка</a></li>
+    <li><a href="blank.html">Гарантия</a></li>
+    <li><a href="blank.html">Кредит</a></li>
+  </ul>
   
-</section>
-
-
 <!-- Гарантия -->
-<section>
   
-  <h2>Гарантия</h2>
+  <h3>Гарантия</h3> <!-- так понимаю, что гарантия входит в сервисы, поэтому изменила заголовок на h3 -->
+
+  <p>Если купленный у нас товар поломается или заискрит, <br>
+    а также в случае пожара, спровоцированного его <br>
+    возгоранием, вы всегда можете быть уверены в нашей <br>
+    гарантии. Мы обменяем сгоревший товар на новый. <br>
+    Дом уж восстановите как-нибудь сами.</p>
+
+    <!-- Картинка с гарантией -->
   
 </section>
 
@@ -117,7 +233,7 @@
 
   <!-- Карта -->
 
-  <a href="blank.html">Заблудились? НапиШИТЕ НАМ!</a>
+  <a href="blank.html">Заблудились? Напишите нам!</a>
 
 </section>
 
@@ -164,7 +280,7 @@
 
     <p>
       Обратная связь:
-      <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a> <!-- mail как ссылка оформляется? -->
+      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> <!-- дополнила mailto-->
     </p>
 
     <p>
