@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title> <!-- название страницы поменять? -->
+    <title>HTML Academy: Техномарт</title> 
   </head>
   <body>
 
@@ -73,20 +73,52 @@
 <h3>Производители:</h3>
 
 <!-- Здесь будет форма. Но ее еще не проходили, сделала списком -->
+
+<form action="https://echo.htmlacademy.ru" method="get">
+  <fieldset>
+    <legend>Производители:</legend>
+    <ul>
+      <li>
+        <input type="checkbox" name="bosch" id="filter-bosch" checked>
+        <label for="bosch">Bosch</label></li>
+      <li>
+        <input type="checkbox" name="interskol" id="filter-interskol">
+        <label for="interskol">Интерскол</label>
+        </li>
+      <li>
+        <input type="checkbox" name="makita" id="filter-makita" checked>
+        <label for="makita"> Makita</label>
+        </li>
+      <li>
+        <input type="checkbox" name="dewalt" id="filter-dewalt">
+        <label for="dewalt"> Dewalt</label>
+        </li>
+      <li>
+        <input type="checkbox" name="hitachi" id="filter-hitachi">
+      <label for="hitachi">Hitachi</label>
+        </li>
+  </ul>
+  </fieldset>
+  
+  <fieldset>
+<legend>Питание:</legend>
 <ul>
-    <li>Bosch</li>
-    <li>Интерскол</li>
-    <li>Makita</li>
-    <li>Dewalt</li>
-    <li>Hitachi</li>
+  <li>
+    <input type="radio" name="charging" value="accumulator" id="filter-accumulator" checked>
+    <label for="filter-accumulator">Аккумуляторные</label>
+    
+    </li>
+
+  <li>
+    <input type="radio" name="charging" value="electrical" id="filter-electrical">
+    <label for="filter-electrical">Сетевые</label>
+  </li>
 </ul>
- 
-<h3>Питание:</h3>
-<ul>
-    <li>Аккумуляторные</li>
-    <li>Сетевые</li>
-</ul>
-<button type="button"> Показать</button>
+  </fieldset>
+  
+  <button type="submit">Показать</button>
+
+</form>
 
   </section>
 
