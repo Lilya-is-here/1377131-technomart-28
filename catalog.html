@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title> <!-- название страницы поменять? -->
+    <title>HTML Academy: Техномарт</title> 
   </head>
   <body>
 
@@ -28,8 +28,19 @@
     <a href="tel.+78125550555">+7 (812) 555-05-55</a> 
     <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
+    <div>
+      <a href="blank.html"><img src="img/icon-user.svg" alt="Пользователь"></a>
+    <a href="blank.html">Имя пользователя</a>
+   <a href="blank.html"> <img src="img/icon-logout.svg" alt="Выйти"> </a>
+    </div>
+
+   <div> 
+     <a href="blank.html">Мои заказы</a>
+    <a href="blank.html">Личный кабинет</a>
+  </div>
+
     <ul>
-      <li> <a href="blank.html">Войти</a> </li> <!-- включать ли Войти и Регистрация в nav? -->
+      <li> <a href="blank.html">Войти</a> </li> 
       <li>  <a href="blank.html">Регистрация</a> </li>
     </ul>
   
@@ -70,25 +81,66 @@
   <section>
     
 
-<h3>Производители:</h3>
+<h2>Фильтр:</h2>
 
-<!-- Здесь будет форма. Но ее еще не проходили, сделала списком -->
+<h3>Цена:</h3>
+
+<form action="https://echo.htmlacademy.ru" method="get">
+  <fieldset>
+    <legend>Производители:</legend>
+    <ul>
+      <li>
+        <input type="checkbox" name="bosch" id="filter-bosch" checked>
+        <label for="bosch">Bosch</label></li>
+      <li>
+        <input type="checkbox" name="interskol" id="filter-interskol">
+        <label for="interskol">Интерскол</label>
+        </li>
+      <li>
+        <input type="checkbox" name="makita" id="filter-makita" checked>
+        <label for="makita"> Makita</label>
+        </li>
+      <li>
+        <input type="checkbox" name="dewalt" id="filter-dewalt">
+        <label for="dewalt"> Dewalt</label>
+        </li>
+      <li>
+        <input type="checkbox" name="hitachi" id="filter-hitachi">
+      <label for="hitachi">Hitachi</label>
+        </li>
+  </ul>
+  </fieldset>
+  
+  <fieldset>
+<legend>Питание:</legend>
 <ul>
-    <li>Bosch</li>
-    <li>Интерскол</li>
-    <li>Makita</li>
-    <li>Dewalt</li>
-    <li>Hitachi</li>
+  <li>
+    <input type="radio" name="charging" value="accumulator" id="filter-accumulator" checked>
+    <label for="filter-accumulator">Аккумуляторные</label>
+    
+    </li>
+
+  <li>
+    <input type="radio" name="charging" value="electrical" id="filter-electrical">
+    <label for="filter-electrical">Сетевые</label>
+  </li>
 </ul>
- 
-<h3>Питание:</h3>
-<ul>
-    <li>Аккумуляторные</li>
-    <li>Сетевые</li>
-</ul>
-<button type="button"> Показать</button>
+  </fieldset>
+  
+  <button type="submit">Показать</button>
+
+</form>
+
+
 
   </section>
+
+  <section>
+    <img src="img/icon-mark.svg" alt=""> <!-- Это же декоративное изображение? -->
+     <p>Товар добавлен в корзину</p>
+     <a href="blank.html">Оформить заказ</a> <!-- тут же ссылка? она отправляет на отдельную страницу -->
+     <button type="submit">Продолжить покупки</button><!--  Нужен ли тут submit? или тут должен быть какой то скрипт, чтобы закрыть это окно?-->
+     <button type="button"><img src="img/icon-close.svg" alt="Закрыть"></button>  <!-- тут еще нужен скрипт? чтобы попап закрыть -->
 
 
   <section>
