@@ -3,38 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-  <header>
+  <header class="main-header">
+    <div class="header-top">
 
-    <a href="index.html">       
-    <img src="img/logo-header.png" width="220" height="47" alt="Логотип интернет-магазина строительных материалов и инструментов «Техномарт»"> 
-    </a> 
-
-    <form action="#" method="POST">
-      <input type="search" placeholder="Поиск:">
-    </form> <!-- Каким образом надо вставлять иконку поиска? прямо в форму или отдельно от нее? -->
-
-    <a href="blank.html">Закладки:0</a> 
-    <a href="blank.html">Корзина:0 </a>  
-    <a href="blank.html">Оформить заказ</a> 
-   
-    <h1> Интернет-магазин <br>
-       строительных материалов <br>
-        и инструментов для ремонта 
-    </h1>  <!-- Добавила заголовок h1 -->
-
-    <a href="tel.+78125550555">+7 (812) 555-05-55</a> 
-    <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-
-    <ul>
-      <li> <a href="blank.html">Войти</a> </li> 
-      <li>  <a href="blank.html">Регистрация</a> </li>
-    </ul> <!-- Оставила отдельно от nav -->
+      <a href="index.html">       
+      <img src="img/logo-header.png" width="220" height="47" alt="Логотип интернет-магазина строительных материалов и инструментов «Техномарт»"> 
+      </a> 
   
-      <nav>
-      <ul>
+      <form action="#" method="POST">
+        <input type="search" placeholder="Поиск:">
+      </form> 
+  
+      <a href="blank.html">Закладки:0</a> 
+      <a href="blank.html">Корзина:0 </a>  
+      <a href="blank.html">Оформить заказ</a> 
+    
+    </div>
+   
+    <div class="header-middle">
+      <h1 class="heading"> 
+        Интернет-магазин <br>
+      строительных материалов <br>
+       и инструментов для ремонта 
+   </h1>  
+
+   <a href="tel.+78125550555">+7 (812) 555-05-55</a> 
+   <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+
+   <ul class="login">
+     <li> <a href="blank.html">Войти</a> </li> 
+     <li>  <a href="blank.html">Регистрация</a> </li>
+   </ul> 
+  </div>
+  
+      <nav class="main-navigation">
+      <ul class="site-navigation">
         <li><a href = "index.html">Главная</a></li>
         <li><a href = "blank.html">Компания</a></li>
         <li><a href = "catalog.html">Каталог</a></li>
@@ -284,6 +294,11 @@
   <img src="img/map.png" width="300" height="158" alt="Карта">
 
   <a href="blank.html">Заблудились? Напишите нам!</a>
+
+  <section>
+   <img src="img/map.png" alt="Карта"> <!-- здесь обозначила всплывающее окно с картой-->
+   <button type="button"><img src="img/icon-close.svg" alt="Закрыть"></button>  <!-- тут еще нужен скрипт? чтобы попап закрыть -->
+  </section>
 
   <section>
     <form action="https://echo.htmlacademy.ru" method="post">
