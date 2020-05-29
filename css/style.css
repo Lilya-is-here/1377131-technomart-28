@@ -69,6 +69,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 24px;
+
 }
 
 .header-middle h1 {color: var(--basic-red);
@@ -84,8 +85,43 @@ line-height: 24px;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+  background-color: var(--basic-white);
   }
 
+  .about-company h3, .contacts h2 {font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+
+    .about-company p ,
+    .contacts p {font-family: PT Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 24px;
+    }
+
+    .about-company li {font-family: Cuprum;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;}
+
+      .about-company a ,
+    .contacts a { color:var(--basic-white);
+      font-family: Cuprum;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      width:220px;
+      height:38px;
+      background-color: var(--basic-red);
+      padding:10px 40px;
+    }
 
 
 
