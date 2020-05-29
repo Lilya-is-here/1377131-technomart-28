@@ -37,6 +37,7 @@ body {
   
 }
 
+
 a {
   text-decoration: none;
 }
@@ -72,12 +73,33 @@ line-height: 24px;
 
 }
 
+ .address{
+  color: var(--basic-grey);
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;}  
+
+.phone {
+  color:var(--basic-red);
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+    }
+  
+  
+
 .header-middle h1 {color: var(--basic-red);
   font-family: Cuprum;
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;}
+
+  
 
 .login a { color:var(--basic-black);
   font-family: Cuprum;
@@ -168,6 +190,26 @@ line-height: 24px;
         .footer-social{list-style: none;}
 
         .footer-feedback a {color:var(--special-lightyellow);}
+
+
+
+       
+ /*  Стили для каталога  */
+
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a,
+.current-breadcrumbs {
+  color: var(--basic-black);
+  font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+}
 
 
 
