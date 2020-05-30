@@ -34,8 +34,7 @@ body {
   color: var(--basic-black);
   text-transform: none;
   background-color: var(--basic-white);
-  
-}
+  }
 
 
 a {
@@ -47,62 +46,72 @@ img {
   height: auto;
 }
 
-.main-header{background-color:var(--basic-background);
+.main-header {
+  background-color:var(--basic-background);
 }
-.header-top {color:var(--basic-white);
+
+.header-top {
+  color:var(--basic-white);
   background-color:var(--basic-darkgrey);
   font-size: 18px;
   line-height: 24px;
 }
-.main-navigation {color:var(--basic-white);
+
+.main-navigation {
+  color:var(--basic-white);
   background-color:var(--basic-grey);
   font-size: 18px;
   line-height: 24px;
 }
 
 .site-navigation,
-.login  {list-style: none;}
+.login {
+  list-style: none;
+}
 
 .site-navigation a ,
-.header-top a {color: var(--basic-white);
-  font-family: Cuprum;
+.header-top a {
+  color: var(--basic-white);
+  font-family: Cuprum, Arial, sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 24px;
-
 }
 
- .address{
+ .address {
   color: var(--basic-grey);
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;}  
+  line-height: 24px;
+}  
 
 .phone {
   color:var(--basic-red);
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-    }
-  
+  }
   
 
-.header-middle h1 {color: var(--basic-red);
-  font-family: Cuprum;
+.header-middle h1 {
+  color: var(--basic-red);
+  font-family: Cuprum, Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;}
+  line-height: 24px;
+}
 
   
 
-.login a { color:var(--basic-black);
-  font-family: Cuprum;
+.login a { 
+  color:var(--basic-black);
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -110,7 +119,9 @@ line-height: 24px;
   background-color: var(--basic-white);
   }
 
-  .about-company h3, .contacts h2 {font-family: Cuprum;
+  .about-company h3, 
+  .contacts h2 {
+    font-family: Cuprum, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -119,22 +130,26 @@ line-height: 24px;
 
 
     .about-company p ,
-    .contacts p {font-family: PT Sans;
+    .contacts p {
+      font-family: PT Sans, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 13px;
       line-height: 24px;
     }
 
-    .about-company li {font-family: Cuprum;
+    .about-company li {
+      font-family: Cuprum, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
-      line-height: 24px;}
+      line-height: 24px;
+    }
 
-      .about-company a ,
-    .contacts a { color:var(--basic-white);
-      font-family: Cuprum;
+    .about-company a ,
+    .contacts a {
+       color:var(--basic-white);
+      font-family: Cuprum, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -145,26 +160,31 @@ line-height: 24px;
       padding:10px 40px;
     }
 
-    .main-footer{
+    .main-footer {
       background-color:var(--basic-grey);
     }
-    .footer-bottom{
+
+    .footer-bottom {
       background-color:var(--basic-darkgrey);
     }
 
     .footer-contacts {
       color:var(--basic-white);
-      font-family: Cuprum;
+      font-family: Cuprum, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
-      line-height: 24px;}
+      line-height: 24px;
+    }
 
       .footer-navigation-top,
-      .footer-navigation-bottom {list-style:none;}
+      .footer-navigation-bottom {
+        list-style:none;
+      }
 
-      .footer-navigation-top a {color:var(--basic-white);
-        font-family: Cuprum;
+      .footer-navigation-top a {
+        color:var(--basic-white);
+        font-family: Cuprum, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -172,24 +192,31 @@ line-height: 24px;
       }
 
 
-      .footer-navigation-bottom a {color:var(--special-lightyellow);
-        font-family: Cuprum;
+      .footer-navigation-bottom a {
+        color:var(--special-lightyellow);
+        font-family: Cuprum, Arial, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
-        line-height: 24px;}
+        line-height: 24px;
+      }
 
-        .footer-bottom p{ color:var(--basic-white);
-          font-family: Cuprum;
+        .footer-bottom p {
+           color:var(--basic-white);
+          font-family: Cuprum, Arial, sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
           line-height: 18px;
         }
         
-        .footer-social{list-style: none;}
+        .footer-social {
+          list-style: none;
+        }
 
-        .footer-feedback a {color:var(--special-lightyellow);}
+        .footer-feedback a {
+          color:var(--special-lightyellow);
+        }
 
 
 
@@ -204,7 +231,7 @@ line-height: 24px;
 .breadcrumbs a,
 .current-breadcrumbs {
   color: var(--basic-black);
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 13px;
