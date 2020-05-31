@@ -10,6 +10,8 @@
     --basic-green: #63A63E;
     --basic-red: #EE3643;
   
+    --navigation-dark:#1D2739;
+    --header-top-dark:#161D29;
     --special-yellow: #FFBF47;
     --special-blue: #3BBCE3;
     --special-lilac: #DC91D8;
@@ -18,7 +20,13 @@
     --error: #BA2732;
     --warning: #FFBF47;
     --success: #5FBB2D;
+    --purchase: #518534;
+    --purchase-underline: #367315;
     --additionalgrey:#EAEAEA;
+    --filters:#B5B5B5;
+    --filter-button: #E5E5E5;
+    --discount: #A9A9A9;
+
   }
 
   /* Global */
@@ -46,6 +54,8 @@ img {
   height: auto;
 }
 
+/* header */
+
 .main-header {
   background-color:var(--basic-background);
 }
@@ -57,12 +67,32 @@ img {
   line-height: 24px;
 }
 
+.header-top .header-top-order {
+  background-color: var(--basic-green);
+  padding-top:10px;
+    padding-bottom:10px;
+  padding-left:20px;
+  padding-right:15px;
+}
+
+.header-top .header-top-order:hover {
+background-color: var(--success);
+}
+
+.header-top .header-top-order:active {
+  background-color: var(--basic-green);
+  color: rgba(255, 255, 255, 0.5);
+  }
+
+ /*  Меню */
+
 .main-navigation {
   color:var(--basic-white);
   background-color:var(--basic-grey);
   font-size: 18px;
   line-height: 24px;
 }
+
 
 .site-navigation,
 .login {
@@ -77,6 +107,16 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 24px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+background-color: var(--basic-darkgrey);
+}
+
+.main-navigation a:active { 
+  background-color: var(--navigation-dark);  /* прозрачность в меню надо задавать только тексту? как это лучше сделать? через rgba прописать цвет? */
+  
 }
 
  .address {
@@ -119,6 +159,18 @@ line-height: 24px;
   background-color: var(--basic-white);
   }
 
+  .login a:hover,
+  .login a:focus { color:var(--basic-red);
+
+  }
+
+  .login a:active {
+    color:var(--basic-lightgrey);
+  } 
+
+
+  /* О Компании */
+
   .about-company h3, 
   .contacts h2 {
     font-family: Cuprum, Arial, sans-serif;
@@ -127,7 +179,6 @@ line-height: 24px;
     font-size: 30px;
     line-height: 30px;
   }
-
 
     .about-company p ,
     .contacts p {
@@ -159,6 +210,8 @@ line-height: 24px;
       background-color: var(--basic-red);
       padding:10px 40px;
     }
+
+  /* Footer */
 
     .main-footer {
       background-color:var(--basic-grey);
@@ -202,14 +255,24 @@ line-height: 24px;
       }
 
         .footer-bottom p {
-           color:var(--basic-white);
+           color:var(--basic-background);
           font-family: Cuprum, Arial, sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
           line-height: 18px;
         }
-        
+
+        .footer-navigation a:hover,
+        .footer-navigation a:focus {
+          text-decoration: underline;
+        }
+
+        .footer-navigation a:active {
+          opacity:0.5;
+        }        
+
+
         .footer-social {
           list-style: none;
         }
@@ -218,11 +281,47 @@ line-height: 24px;
           color:var(--special-lightyellow);
         }
 
+        .footer-feedback a:hover,
+        .footer-feedback a:focus {
+          text-decoration: underline;          
+        }
 
+        .footer-feedback a:active {
+          color: var(--basic-red);
+        }
 
        
  /*  Стили для каталога  */
 
+/*  Блок пользователя */
+
+ .user {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+ }
+
+ .user-name {
+   color:var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+ }
+
+
+.user-link a{ 
+color: var(--basic-grey);
+font-size: 16px;
+line-height: 18px;
+}
+
+.user-link a:hover {
+  color: var(--basic-red);
+}
+
+.user-name:active,
+.user-link a:active {
+  color:var(--basic-lightgrey);
+}
 
 .breadcrumbs {
   list-style: none;
@@ -238,6 +337,187 @@ font-size: 13px;
 line-height: 18px;
 }
 
+.page-title {
+  color: var(--basic-grey);
+  font-family: Cuprum, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 30px;
+background-color:var(--basic-background);
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 30px;
+padding-right: 740;
+  }
 
+  
+/* Filters */
+
+.filters { font-family: PT Sans, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.filters h2 {
+  
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+}
+
+
+.filter legend {
+  
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 30px;
+
+}
+
+.filter ul {
+  list-style: none;
+  font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 19px;
+}
+
+.filter-input-checkbox,
+.filter-input-radio {
+  color: var(--basic-lightgrey);
+}
+.filter-input-checkbox:hover,   /* Так и не смогла разобраться как задать стиль чекбоксу и радио-кнопкам или их пока особо не трогать? */
+.filter-input-checkbox:focus,
+.filter-input-radio:hover,
+.filter-input-radio:focus{
+  color: var(--filters);
+} 
+
+.filter-input-checkbox:disabled, /*  Не поняла по стайлгайду, что значит блокирован?  */
+label:disabled {
+  color: var(--filters);
+  opacity: 0.3;
+}
+
+.filter-button {
+  font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+border: 1px solid var(--filter-button);
+background-color: var(--basic-white);
+padding: 10px 80px;
+}
+
+.sort,
+.sort-list {
+  font-family: PT Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+text-transform: uppercase;
+}
+.sort-list {
+  list-style: none;
+}
+.sort-list span {
+  color: var(--basic-lightgrey);
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort-list span:hover,
+.sort-list span:focus {color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+  
+}
+
+.sort-list span:active {
+  color: var(--basic-red);
+}
+
+/* Каталог */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list li {
+  font-family: PT Sans, Arial, sans-serif;
+}
+
+.catalog-item-title {
+  font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+}
+
+.catalog-item-price { 
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-item-price-old {
+color: var(--discount);
+text-decoration-line: line-through;
+text-transform: uppercase;
+}
+
+.catalog-item-price-new {
+color: var(--basic-white);
+background-color: var(--basic-red);
+width: 141px;
+height: 38px;
+}
+
+/* Кнопки "купить" и "в закладки" */
+
+.catalog-button button{
+width:135px;
+height:38px;
+font-family: Cuprum, Arial, sans-serif;
+text-transform: uppercase;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+}
+
+.catalog-button-purchase {
+  background-color: var(--basic-green);
+  color:var(--basic-white);
+  border:none;
+  box-shadow: inset 0px -3px 0px var(--purchase-underline);
+  border-radius: 2px;
+}
+
+.catalog-button-purchase:hover {
+  background-color: var(--success);
+  }
+
+  .catalog-button-purchase:active {
+    background-color: var(--purchase);
+    }
+
+.catalog-button-bookmark {
+background-color: var(--basic-white);
+color: var(--basic-grey);
+border: 3px solid var(--basic-green);
+box-sizing: border-box;
+border-radius: 2px;
+}
+
+.catalog-button-bookmark:hover {
+  border: 3px solid var(--basic-grey);
+}
+
+.catalog-button-bookmark:active {
+  opacity: 0.5;
+}
 
 
