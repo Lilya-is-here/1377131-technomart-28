@@ -17,6 +17,7 @@
     --special-lilac: #DC91D8;
     --special-lightgreen: #8ED78F;
     --special-lightyellow: #FFD180;
+    --lightyellow:#FFC047;
     --error: #BA2732;
     --warning: #FFBF47;
     --success: #5FBB2D;
@@ -202,6 +203,64 @@ background-color: var(--basic-darkgrey);
   .login a:active {
     color:var(--basic-lightgrey);
   } 
+
+  /* Промо-блок */
+.promo-list {
+  list-style: none;
+}
+
+.promo-list-item {
+  display: inline-block;
+  min-width: 300px;
+  min-height: 123px;
+  font-family: Cuprum, Arial, sans-serif;
+  color: var(--basic-white);
+}
+
+.promo-list-item-title {
+ font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+}
+
+.promo-list-item a {
+  color:var(--basic-white);
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+
+.promo-list-item-button {
+
+    background-color: rgba(255, 255, 255, 0.3);
+   padding:10px 25px;  
+   }
+
+
+.promo-list-item:nth-child(1) {
+  background-color: var(--warning);
+
+}
+
+.promo-list-item:nth-child(2) {
+  background-color: var(--special-blue);
+}
+
+.promo-list-item:nth-child(3) {
+  background-color: var(--special-lilac);
+}
+
+.promo-list-item:nth-child(4) {
+  background-color: var(--special-lightgreen);
+}
+
+.promo-list-item:nth-child(5) {
+  background-color: var(--lightyellow);
+}
 
 /*   Популярные товары и производители */
 .goods h2,
