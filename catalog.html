@@ -21,9 +21,12 @@
         <input type="search" placeholder="Поиск:">
       </form> 
   
-      <a href="blank.html">Закладки:0</a> 
-      <a href="blank.html">Корзина:0 </a>  
-      <a href="blank.html">Оформить заказ</a> 
+      <div class = header-top-menu>
+        <a class="header-top-bookmark" href="blank.html">Закладки:0</a> 
+        <a class="header-top-busket" href="blank.html">Корзина:0 </a>  
+        <a class="header-top-order" href="blank.html">Оформить заказ</a> 
+      </div>
+      
     
     </div>
    
@@ -193,10 +196,10 @@
 
     <li>
 
-    <p class="catalog-button">
-        <button class="catalog-button-purchase" type="button">Купить</button>      <!--  Этот блок сделать отдельным дивом?    -->  
+    <div class="catalog-button">
+        <button class="catalog-button-purchase" type="button">Купить</button>       
         <button class="catalog-button-bookmark" type="button">В закладки</button>
-    </p>
+    </в>
 
     <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
         <p class="catalog-item-price">
@@ -297,7 +300,12 @@
 </li>
 
 </ul>
-
+<ul class="pagination-list">
+  <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+  <li class="pagination-item"><a href="#">2</a></li>
+  <li class="pagination-item"><a href="#">3</a></li>
+  <li class="pagination-item"><a href="#">Следующая</a></li>
+</ul>
     
   </section>
 

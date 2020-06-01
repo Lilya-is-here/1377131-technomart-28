@@ -67,6 +67,28 @@ img {
   line-height: 24px;
 }
 
+.header-top .header-top-bookmark {
+  background-color: var(--basic-darkgrey);
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.header-top .header-top-bookmark:active {
+  background-color: var(--header-top-dark); 
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header-top .header-top-busket {
+  background-color: var(--basic-darkgrey);
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.header-top .header-top-busket:active {
+  background-color: var(--header-top-dark);
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .header-top .header-top-order {
   background-color: var(--basic-green);
   padding-top:10px;
@@ -109,38 +131,51 @@ font-size: 18px;
 line-height: 24px;
 }
 
+.main-navigation a {
+  background-color: var(--basic-grey);
+  padding-top:15px;
+  padding-bottom:20px;
+  box-shadow: inset 0px -5px 0px var(--basic-darkgrey);
+}
+
 .main-navigation a:hover,
 .main-navigation a:focus {
 background-color: var(--basic-darkgrey);
 }
 
 .main-navigation a:active { 
-  background-color: var(--navigation-dark);  /* прозрачность в меню надо задавать только тексту? как это лучше сделать? через rgba прописать цвет? */
+  background-color: var(--navigation-dark);
+  color: rgba(255, 255, 255, 0.5);
   
+}
+
+.header-middle {
+  font-family: Cuprum, Arial, sans-serif;
 }
 
  .address {
   color: var(--basic-grey);
-  font-family: Cuprum, Arial, sans-serif;
-  font-style: normal;
+   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 }  
 
+
 .phone {
   color:var(--basic-red);
-  font-family: Cuprum, Arial, sans-serif;
-  font-style: normal;
+    font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  border: 3px solid var(--basic-white);
+  padding-top:7px;
+  padding-bottom: 8px;
   }
   
 
 .header-middle h1 {
   color: var(--basic-red);
-  font-family: Cuprum, Arial, sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
@@ -473,6 +508,7 @@ color: var(--basic-white);
 background-color: var(--basic-red);
 width: 141px;
 height: 38px;
+
 }
 
 /* Кнопки "купить" и "в закладки" */
