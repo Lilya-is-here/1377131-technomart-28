@@ -674,3 +674,35 @@ border-radius: 2px;
 .catalog-item:hover .catalog-button {
   display:block;
 }
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+font-family: PT Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+text-transform: uppercase;
+color: var(--basic-black);
+}
+
+.information h3 {
+  font-family: Cuprum, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.information p {
+  font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 24px;
+}
+
