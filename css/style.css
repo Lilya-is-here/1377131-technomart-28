@@ -203,7 +203,47 @@ background-color: var(--basic-darkgrey);
     color:var(--basic-lightgrey);
   } 
 
+/*   Популярные товары и производители */
+.goods h2,
+.producer h2 {
+color: var(--basic-grey);
+font-family: Cuprum, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 30px;
+text-transform: uppercase;
 
+}
+
+.producer-list {
+  list-style: none;
+}
+
+.red-button {
+  color:var(--basic-white);
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height:38px;
+  background-color: var(--basic-red);
+  
+}
+
+.producer-button { 
+  padding:10px 40px;
+  width:192px;
+
+}
+
+.goods-button { 
+  padding:10px 25px;
+  width:192px;
+
+}
   /* О Компании */
 
   .about-company h3, 
@@ -232,20 +272,15 @@ background-color: var(--basic-darkgrey);
       line-height: 24px;
     }
 
-    .about-company a ,
-    .contacts a {
-       color:var(--basic-white);
-      font-family: Cuprum, Arial, sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 18px;
-      width:220px;
-      height:38px;
-      background-color: var(--basic-red);
-      padding:10px 40px;
+    .about-company-button {
+    padding:10px 40px;
+    width: 220px;
     }
 
+    .contacts-button {
+      padding:10px 60px;
+      width: 300px;
+    }
   /* Footer */
 
     .main-footer {
