@@ -86,7 +86,7 @@ img {
 
 .header-top .header-top-busket:active {
   background-color: var(--header-top-dark);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(160, 73, 73, 0.5);
 }
 
 .header-top .header-top-order {
@@ -328,6 +328,17 @@ background-color: var(--basic-darkgrey);
        
  /*  Стили для каталога  */
 
+ .header-top-busket-full {
+   background-color: var(--basic-red);      /*  В стайлгайде не прописаны стили для красной кнопки , поэтому сама задала  */
+   padding-top:10px;
+   padding-bottom:10px;
+ }
+ 
+ .header-top .header-top-busket-full:active {
+   background-color: var(--error);
+   color: rgba(255, 255, 255, 0.5);
+ }
+
 /*  Блок пользователя */
 
  .user {
@@ -556,4 +567,16 @@ border-radius: 2px;
   opacity: 0.5;
 }
 
+.catalog-item {position: relative;
+}
 
+.catalog-button {
+  position: absolute;
+    display:none;
+}
+
+.catalog-item:hover img{ visibility: hidden;
+ }
+.catalog-item:hover .catalog-button {
+  display:block;
+}
