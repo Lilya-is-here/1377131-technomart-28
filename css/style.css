@@ -55,17 +55,40 @@ img {
   height: auto;
 }
 
+
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /* header */
+
 
 .main-header {
   background-color:var(--basic-background);
+  margin-bottom: 70px;
+  
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
 }
+
 
 .header-top {
   color:var(--basic-white);
   background-color:var(--basic-darkgrey);
   font-size: 18px;
   line-height: 24px;
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .header-top .header-top-bookmark {
@@ -114,6 +137,9 @@ background-color: var(--success);
   background-color:var(--basic-grey);
   font-size: 18px;
   line-height: 24px;
+
+  outline: 5px solid rgba(190,50,60,05);
+  outline-offset: -5px; 
 }
 
 
@@ -152,6 +178,8 @@ background-color: var(--basic-darkgrey);
 
 .header-middle {
   font-family: Cuprum, Arial, sans-serif;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
  .address {
@@ -687,6 +715,10 @@ font-size: 13px;
 line-height: 18px;
 text-transform: uppercase;
 color: var(--basic-black);
+}
+
+.information {
+  background-color: var(--basic-background);
 }
 
 .information h3 {
