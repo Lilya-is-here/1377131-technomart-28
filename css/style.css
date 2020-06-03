@@ -99,11 +99,12 @@ img {
   padding: 0 10px;
 }
 
+/* Обертка для  header-top */
+
 .header-top-wrapper {
 margin-bottom: 40px;
   display: grid;
   grid-template-columns:    220px 271px 450px;
-
   
   width: 1200px;
   height:42px;
@@ -148,9 +149,6 @@ border:0px;
   
    }
 
-
-  
-  
 
 .header-top .header-top-bookmark:active {
   background-color: var(--header-top-dark); 
@@ -197,7 +195,7 @@ background-color: var(--success);
 
 .site-navigation {
     min-height: 60px;
-  background-color:var(--basic-grey);
+  
   box-shadow: inset 0px -5px 0px var(--basic-darkgrey);
   
 }
@@ -236,11 +234,27 @@ background-color: var(--basic-darkgrey);
   
 }
 
+.header-middle-wrapper {
+  display: grid;
+  grid-template-columns: 385px 270px 285px;
+  margin-bottom: 40px;
+
+}
+
+
 .header-middle {
   font-family: Cuprum, Arial, sans-serif;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
   min-height: 158px;
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content:center;
+  flex-wrap:wrap;
 }
 
  .address {
@@ -249,6 +263,7 @@ background-color: var(--basic-darkgrey);
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
 }  
 
 
@@ -261,18 +276,46 @@ background-color: var(--basic-darkgrey);
   border: 3px solid var(--basic-white);
   padding-top:7px;
   padding-bottom: 8px;
+  margin: 0px;
+  text-align: center;
+  
+  width: 270px;
   }
   
 
 .header-middle h1 {
-  color: var(--basic-red);
+  color: var(--basic-red);  /*  Шрифт надо отредактировать */
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 30px;
+  text-align: justify;
+   
 }
 
-  
+  .login {
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    padding: 0px;
+
+  }
+
+  .login .sign-in {
+    width:121px;
+    text-align: center;
+    margin-right: 10px;
+    padding-right: 27px;
+    padding-left: 19px;
+  }
+  .login .sign-up {
+    width: 150px;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
 .login a { 
   color:var(--basic-black);
@@ -282,6 +325,7 @@ background-color: var(--basic-darkgrey);
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-white);
+  padding: 12px 0px;
   }
 
   .login a:hover,
