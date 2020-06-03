@@ -75,7 +75,7 @@ img {
 .main-header {
   background-color:var(--basic-background);
   margin-bottom: 70px;
-  
+   
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
 }
@@ -86,39 +86,88 @@ img {
   background-color:var(--basic-darkgrey);
   font-size: 18px;
   line-height: 24px;
+ 
+  min-height: 42px;
 
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+ 
 }
 
-.header-top .header-top-bookmark {
+  
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-top-wrapper {
+margin-bottom: 40px;
+  display: grid;
+  grid-template-columns:    220px 271px 450px;
+
+  
+  width: 1200px;
+  height:42px;
+}
+
+
+.main-header-logo {
+    height: 47px;
+  width: 220px;
+  position: relative;
+  bottom:-1px;
+    }
+
+    .header-top .header-search {
+     width: 271px;
+     
+    }
+
+.header-top .search-field {
+  height: 42px;
+  width:271px;
+padding:5px 0px;
+background-color: var(--basic-darkgrey);
+border:0px;
+}
+
+
+.header-top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 450px;
+  height: 42px;
+}
+
+.header-top-menu a { 
+   
+  width:150px;
   background-color: var(--basic-darkgrey);
-  padding-top:10px;
-  padding-bottom:10px;
-}
+  padding:10px 0px;
+  margin:0px;
+  
+   }
+
+
+  
+  
 
 .header-top .header-top-bookmark:active {
   background-color: var(--header-top-dark); 
   color: rgba(255, 255, 255, 0.5);
-}
 
-.header-top .header-top-busket {
-  background-color: var(--basic-darkgrey);
-  padding-top:10px;
-  padding-bottom:10px;
 }
 
 .header-top .header-top-busket:active {
   background-color: var(--header-top-dark);
-  color: rgba(160, 73, 73, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .header-top .header-top-order {
   background-color: var(--basic-green);
-  padding-top:10px;
-    padding-bottom:10px;
-  padding-left:20px;
-  padding-right:15px;
+
+  text-align: center;
+ 
 }
 
 .header-top .header-top-order:hover {
@@ -134,12 +183,10 @@ background-color: var(--success);
 
 .main-navigation {
   color:var(--basic-white);
-  background-color:var(--basic-grey);
-  font-size: 18px;
+   font-size: 18px;
   line-height: 24px;
-
-  outline: 5px solid rgba(190,50,60,05);
-  outline-offset: -5px; 
+  min-width:940px;
+  min-height: 60px;
 }
 
 
@@ -147,6 +194,15 @@ background-color: var(--success);
 .login {
   list-style: none;
 }
+
+.site-navigation {
+    min-height: 60px;
+  background-color:var(--basic-grey);
+  box-shadow: inset 0px -5px 0px var(--basic-darkgrey);
+  
+}
+
+
 
 .site-navigation a ,
 .header-top a {
@@ -158,15 +214,19 @@ font-size: 18px;
 line-height: 24px;
 }
 
-.main-navigation a {
+.site-navigation a {
   background-color: var(--basic-grey);
   padding-top:15px;
   padding-bottom:20px;
+  padding-left: 25px;
+  padding-right: 25px;
   box-shadow: inset 0px -5px 0px var(--basic-darkgrey);
+  
+  
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
 background-color: var(--basic-darkgrey);
 }
 
@@ -180,6 +240,7 @@ background-color: var(--basic-darkgrey);
   font-family: Cuprum, Arial, sans-serif;
   outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
+  min-height: 158px;
 }
 
  .address {
@@ -242,10 +303,11 @@ background-color: var(--basic-darkgrey);
   min-width: 300px;
   min-height: 123px;
   font-family: Cuprum, Arial, sans-serif;
-  color: var(--basic-white);
+  
 }
 
 .promo-list-item-title {
+  color: var(--basic-white);
  font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -451,7 +513,7 @@ text-transform: uppercase;
  /*  Стили для каталога  */
 
  .header-top-busket-full {
-   background-color: var(--basic-red);      /*  В стайлгайде не прописаны стили для красной кнопки , поэтому сама задала  */
+   background-color: var(--basic-red);      
    padding-top:10px;
    padding-bottom:10px;
  }
