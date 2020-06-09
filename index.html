@@ -23,7 +23,8 @@
         
           <div class="main-header-search">
               <form class="header-search" action="#" method="POST">
-             <span></span> <input class="search-field" type="search" placeholder="Поиск:">
+                <label for="search"></label>
+             <input class="search-field" type="search" name="search" placeholder="Поиск:">
             </form> 
           </div>
       
@@ -162,10 +163,18 @@
 <!-- Популярные товары -->
 <section class="goods">
 
-  <div class="container"> <h2>Популярные товары:</h2>
+  <div class="container">
 
-    <a class="red-button goods-button" href="blank.html">Все популярные товары</a> 
-      <ul class="catalog-list-main catalog-list-wrapper">
+    
+    <div class="main-catalog-title"> 
+      
+      <h2>Популярные товары:</h2>
+
+      <a class="red-button goods-button" href="blank.html">Все популярные товары</a> 
+
+    </div>
+
+        <ul class="catalog-list-main catalog-list-wrapper">
         
           
         <li class="catalog-item">
@@ -253,9 +262,12 @@
 <section class="producer">
   
   <div class="container">
-    <h2>Популярные производители:</h2>
+   
+    <div class="producer-title">
+      <h2>Популярные производители:</h2>
 
-  <a class="red-button producer-button" href="catalog.html">Открыть каталог</a>
+      <a class="red-button producer-button" href="blank.html">Все производители</a>
+    </div>
 
   <ul class="producer-list producer-list-wrapper">
     
@@ -279,23 +291,25 @@
   <div class="container">
    <div class="services-wrapper">
     <div class="services-description">
-      <h2>Сервисы</h2>
+      <h2 class="services-title">Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
      </div>
   
     <div class="services-list">
-      <ul>
-        <li><a class="services-list-item" href="blank.html">Доставка</a></li>
-        <li><a class ='services-list-item' href="blank.html">Гарантия</a></li>
-        <li><a class="services-list-item" href="blank.html">Кредит</a></li>
-      </ul>
+      <input type="radio" name="services"  value="all" id="delivery" checked>
+      <label for="delivery">Доставка</label>
+      <input type="radio" name="services" value="false" id="guarantee">
+      <label for="guarantee">Гарантия</label>
+      <input type="radio" name="services" value="true" id="credit">
+      <label for="credit">Кредит</label>
+     
     </div>
     
     <!-- Доставка -->
     <div class="services-item delivery">
-      <h3>Доставка</h3> 
+      <h3 class="services-item-title">Доставка</h3> 
     
       <p> Мы с удовольствием доставим ваш товар прямо <br>
         к вашему подъезду совершенно бесплатно! <br>
@@ -312,7 +326,7 @@
 <!-- Гарантия -->
   
  <div class="guarantee visually-hidden">
-  <h3>Гарантия</h3> 
+  <h3  class="services-item-title">Гарантия</h3> 
 
   <p>Если купленный у нас товар поломается или заискрит, <br>
     а также в случае пожара, спровоцированного его <br>
@@ -327,7 +341,7 @@
 
 <!--  Кредит -->
 <div class="credit visually-hidden">
-  <h3>Кредит</h3> 
+  <h3  class="services-item-title">Кредит</h3> 
 
   <p>Залезть в долговую яму стало проще! <br>
     Кредитные консультанты придут вам на помощь.
@@ -358,10 +372,10 @@
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br> 
       Техномарт работает со многими транспортными компаниями:</p>
       
-      <ul>
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
+      <ul class="about-company-list">
+        <li class="about-company-list-item">Деловые линии</li>
+        <li class="about-company-list-item">Автотрейдинг</li>
+        <li class="about-company-list-item">ЖелДорЭкспедиция</li>
       </ul>
       
       <a class="red-button about-company-button" href="blank.html">Подробнее о компании</a>
@@ -374,13 +388,13 @@
         <p>Вы можете забрать товар сами, <br>
           заехав в наш офис:</p>
         
-          <img src="img/map.png" width="300" height="158" alt="Карта">
+          <img class="contacts-map-image" src="img/map.png" width="300" height="158" alt="Карта">
         
           <a class="red-button contacts-button" href="blank.html">Заблудились? Напишите нам!</a>
         
           <section class="visually-hidden">
             <h2>Карта</h2>
-           <img src="img/map.png" alt="Карта"> <!-- здесь обозначила всплывающее окно с картой-->
+           <img src="img/map.png" alt="Карта"> 
            <button type="button"><img src="img/icon-close.svg" alt="Закрыть"></button> 
           </section>
     </div>
@@ -417,7 +431,7 @@
 
     <div class="container">
       
-  <div class="footer-top-wrapper">
+  <div class="footer-wrapper">
     <div class="main-footer-logo">
       <a href="index.html">       
         <img src="img/logo-footer.png" width="220" height="68" alt="Логотип интернет-магазина строительных материалов и инструментов «Техномарт»"> 
@@ -448,59 +462,59 @@
       <li class="footer-navigation-item-bottom"><a href="blank.html">Инструмент</a></li>
       <li class="footer-navigation-item-bottom"><a href="blank.html">Спецпредложения</a></li>
     </ul>
-  
-  </section>
+  </div> 
+    </div>
+    </section>
 
-  </div>
-  </div>
+
+  
+
 
 
     <section class="footer-bottom">
       <h2 class="visually-hidden">Социальные сети</h2> 
-    <div class="container">
-
-      <div class="footer-bottom-wrapper">
-  
-        <div class="footer-copyright"> 
-          <p> © 2010–2019 Компания «Техномарт» <br> 
-          Все права защищены</p>
-        </div>
-      
-          
-          <div class="footer-social">
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a href="#">Вконтакте</a>
-              </li>
-              <li class="footer-social-item">
-                <a href="#">Фейсбук</a>
-              </li>
-              <li class="footer-social-item">
-                <a href="#">Инстаграм</a>
-              </li>
-            </ul>
-          </div>
-           
               
-           <div class="footer-feedback">
-            <p>
-              Обратная связь: <br>
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> 
-            </p>
-            </div>
-    
-            <div class="footer-developer">
-              <p>
-                Разработано - <br>
-                <a href="https://htmlacademy.ru">HTML Academy</a>
-              </p>
-            </div>
+           <div class="container">
+             <div class="footer-bottom-wrapper">
+              <div class="footer-copyright"> 
+                <p> © 2010–2019 Компания «Техномарт» <br> 
+                Все права защищены</p>
+                </div>
             
-      
-      </div>
-    </div>    
-    
-    </section>
+                
+                <div class="footer-social">
+                  <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                      <a href="#">Вконтакте</a>
+                    </li>
+                    <li class="footer-social-item">
+                      <a href="#">Фейсбук</a>
+                    </li>
+                    <li class="footer-social-item">
+                      <a href="#">Инстаграм</a>
+                    </li>
+                  </ul>
+                </div>
+                 
+                    
+                 <div class="footer-feedback">
+                  <p>
+                    Обратная связь: <br>
+                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> 
+                  </p>
+                  </div>
+          
+                  <div class="footer-developer">
+                    <p>
+                      Разработано - <br>
+                      <a href="https://htmlacademy.ru">HTML Academy</a>
+                    </p>
+                  </div>
+                              
+             </div>
+           </div>
+          
+          </section>
     
   
 
