@@ -112,14 +112,30 @@
       
     </li>
 
-    <li>
-      <div class="promo-slider">
-        <h3>Перфораторы</h3>
-      <p>Настоящие мужские игрушки</p>
-      <a href="catalog.html">Открыть каталог</a>
-      <img src="img/slider-1.jpg" width="620" height="266"  alt="Перфораторы"> 
+    <li class="promo-list-item">
+      <div class="slider-wrapper">
+        <div class="promo-slider">
+        
+          <ul class="promo-slider-list">
+            <li class="slider-one"> 
+              <div class="promo-slider-header">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </div>
+             
+              <a href="catalog.html">Открыть каталог</a>
+              </li>
+            
+          </ul>
+          <div class="slider-controls">
+            <button type="button">Назад</button>
+            <button type="button">Вперед</button>
+            </div>
+        
+        </div>
+      
+
       </div>
-    
     </li>
   
     <li class="promo-list-item">
@@ -298,12 +314,14 @@
      </div>
   
     <div class="services-list">
-      <input type="radio" name="services"  value="all" id="delivery" checked>
-      <label for="delivery">Доставка</label>
-      <input type="radio" name="services" value="false" id="guarantee">
-      <label for="guarantee">Гарантия</label>
-      <input type="radio" name="services" value="true" id="credit">
-      <label for="credit">Кредит</label>
+     
+      <input type="radio" name="services"  value="all" id="radio-delivery" checked>
+      <label for="radio-delivery">Доставка</label>
+      
+      <input type="radio" name="services" value="false" id="radio-guarantee">
+      <label for="radio-guarantee">Гарантия</label>
+      <input type="radio" name="services" value="true" id="radio-credit">
+      <label for="radio-credit">Кредит</label>
      
     </div>
     
@@ -311,47 +329,42 @@
     <div class="services-item delivery">
       <h3 class="services-item-title">Доставка</h3> 
     
-      <p> Мы с удовольствием доставим ваш товар прямо <br>
+      <p class="services-item-description"> Мы с удовольствием доставим ваш товар прямо <br>
         к вашему подъезду совершенно бесплатно! <br>
         Ведь мы неплохо заработаем, <br>
         поднимая его на ваш этаж!
       </p>
-    
-      <img src="img/delivery.png" width="468" height="261" alt="Доставка">
-    
-     </div>
-   </div>
+      
+      </div>
 
-
-<!-- Гарантия -->
+      <!-- Гарантия -->
   
- <div class="guarantee visually-hidden">
+ <div class="services-item guarantee">
   <h3  class="services-item-title">Гарантия</h3> 
 
-  <p>Если купленный у нас товар поломается или заискрит, <br>
+  <p class="services-item-description">Если купленный у нас товар поломается или заискрит, <br>
     а также в случае пожара, спровоцированного его <br>
     возгоранием, вы всегда можете быть уверены в нашей <br>
     гарантии. Мы обменяем сгоревший товар на новый. <br>
     Дом уж восстановите как-нибудь сами.
   </p>
 
-  <img src="img/guarantee.png" width="389" height="283" alt="Гарантия">
-
- </div>
+  </div>
 
 <!--  Кредит -->
-<div class="credit visually-hidden">
+<div class="services-item credit">
   <h3  class="services-item-title">Кредит</h3> 
 
-  <p>Залезть в долговую яму стало проще! <br>
-    Кредитные консультанты придут вам на помощь.
+  <p class="services-item-description">Залезть в долговую яму стало проще! <br>
+    Кредитные консультанты придут вам на помощь. <br>
+
+    <button class="credit-button red-button">Отправить заявку</button>
   </p>
 
-  <button>Отправить заявку</button>
+   </div>
 
-  <img src="img/credit.png" width="465" height="285" alt="Кредит">
+   </div>
 
- </div>
   </div>
     
   
@@ -392,7 +405,7 @@
         
           <a class="red-button contacts-button" href="blank.html">Заблудились? Напишите нам!</a>
         
-          <section class="visually-hidden">
+          <section class="modal modal-map visually-hidden">
             <h2>Карта</h2>
            <img src="img/map.png" alt="Карта"> 
            <button type="button"><img src="img/icon-close.svg" alt="Закрыть"></button> 
@@ -401,25 +414,31 @@
   </div>
   
   
-    <section class="visually-hidden">
-      <h2>Напишите нам</h2>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше имя:</label>
+       <div class="clearfix">
+        <p class="write-us-left">
+          <label for="name">Ваше имя:</label> 
           <input id="name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
   
-        <p><label for="contact-mail">Ваш e-mail:</label>
+        <p class="write-us-right"><label for="contact-mail">Ваш e-mail:</label> 
           <input id="contact-mail" type="email" name="contact-mail" placeholder="email@example.com">
         </p>
+       </div>
   
         <p>
-          <label for="message">Текст письма:</label>
-          <textarea name="message" id="message" cols="40" rows="7" placeholder="В свободной форме"></textarea>
+          <label for="message">Текст письма:</label> <br>
+          <textarea name="message" id="message" cols="40" rows="5" placeholder="В свободной форме"></textarea>
         </p>
+
   
-        <button type="submit">Оформить заказ</button>
-        <button type="button"><img src="img/icon-close.svg" alt="Закрыть"></button>       
+        <div class="modal-footer clearfix">
+          <button class="red-button write-us-submit" type="submit">Отправить</button>
+          
+        </div>    
+     
       </form>
   
     </section>
@@ -466,11 +485,6 @@
     </div>
     </section>
 
-
-  
-
-
-
     <section class="footer-bottom">
       <h2 class="visually-hidden">Социальные сети</h2> 
               
@@ -485,17 +499,28 @@
                 <div class="footer-social">
                   <ul class="footer-social-list">
                     <li class="footer-social-item">
-                      <a href="#">Вконтакте</a>
+                      <a class="social-button" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
+                      </a>
                     </li>
                     <li class="footer-social-item">
-                      <a href="#">Фейсбук</a>
+                      <a class="social-button" href="#">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+                      </a>
                     </li>
                     <li class="footer-social-item">
-                      <a href="#">Инстаграм</a>
+                      <a class="social-button" href="#">
+                        <span class="visually-hidden">Инстаграм</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
+                      </a>
                     </li>
                   </ul>
                 </div>
-                 
+                
+             
+               
                     
                  <div class="footer-feedback">
                   <p>
@@ -507,7 +532,7 @@
                   <div class="footer-developer">
                     <p>
                       Разработано - <br>
-                      <a href="https://htmlacademy.ru">HTML Academy</a>
+                      <a href="https://htmlacademy.ru">htmlacademy.ru</a>
                     </p>
                   </div>
                               
