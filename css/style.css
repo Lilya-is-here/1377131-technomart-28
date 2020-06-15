@@ -30,6 +30,7 @@
     --title-background-color: #F9F5F0;
     --catalog-background-sort: #F7F3EC;
     --social-button: #212A3A;
+    --modal-window: #F4F4F4;
 
   }
 
@@ -1224,6 +1225,111 @@ input #radio-guarantee:checked .guarantee {
         }
 
        
+/* Модальные окна */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  height: 430px;
+  font-family: Cuprum, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+  
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
+
+  border: 2px solid;
+  border-color: var(--basic-lightgrey);
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.modal-write-us input {
+  height: 38px;
+  margin-top: 11px;
+  
+}
+
+
+
+.modal-write-us textarea {
+  resize: none; 
+  height: 114px;
+  margin-top: 11px;
+}
+
+.modal ::placeholder {
+  font-family: PT Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 24px;
+border: none;
+
+}
+
+.write-us-submit {
+  border: none;
+  width: 460px;
+  height: 38px;
+ 
+}
+.modal-footer {
+  background-color: var(--modal-window);
+  height: 112px;
+  
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.write-us-left {
+  float: left;
+}
+
+.write-us-right {
+  float: right;
+}
+
+.write-us-left,
+.write-us-right {
+  width: 220px;
+}
+
+.modal-write-us  {
+  top: 120px;
+  bottom: auto;
+  width: 460px;
+ padding-left: 80px;
+ padding-right: 80px;
+ padding-top: 46px;
+border-top: 7px solid var(--basic-red);
+
+
+}
+
+
+
+
+
+
+
  /*  Стили для каталога  */
 
 
@@ -1978,6 +2084,9 @@ margin-right: 10px;
   padding-left: 33px;
 }
 
+.pagination-item:last-child {
+  margin-right: 0;
+}
 .pagination-list {
  
   display: flex;

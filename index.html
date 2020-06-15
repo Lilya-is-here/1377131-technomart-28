@@ -405,7 +405,7 @@
         
           <a class="red-button contacts-button" href="blank.html">Заблудились? Напишите нам!</a>
         
-          <section class="visually-hidden">
+          <section class="modal modal-map visually-hidden">
             <h2>Карта</h2>
            <img src="img/map.png" alt="Карта"> 
            <button type="button"><img src="img/icon-close.svg" alt="Закрыть"></button> 
@@ -414,25 +414,31 @@
   </div>
   
   
-    <section class="visually-hidden">
-      <h2>Напишите нам</h2>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name">Ваше имя:</label>
+       <div class="clearfix">
+        <p class="write-us-left">
+          <label for="name">Ваше имя:</label> 
           <input id="name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
   
-        <p><label for="contact-mail">Ваш e-mail:</label>
+        <p class="write-us-right"><label for="contact-mail">Ваш e-mail:</label> 
           <input id="contact-mail" type="email" name="contact-mail" placeholder="email@example.com">
         </p>
+       </div>
   
         <p>
-          <label for="message">Текст письма:</label>
-          <textarea name="message" id="message" cols="40" rows="7" placeholder="В свободной форме"></textarea>
+          <label for="message">Текст письма:</label> <br>
+          <textarea name="message" id="message" cols="40" rows="5" placeholder="В свободной форме"></textarea>
         </p>
+
   
-        <button type="submit">Оформить заказ</button>
-        <button type="button"><img src="img/icon-close.svg" alt="Закрыть"></button>       
+        <div class="modal-footer clearfix">
+          <button class="red-button write-us-submit" type="submit">Отправить</button>
+          
+        </div>    
+     
       </form>
   
     </section>
