@@ -1393,6 +1393,7 @@ top: -60px;
 /* Модальные окна */
 
 .modal {
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
@@ -1407,8 +1408,15 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 24px;
-  
-}
+  }
+  .modal form {
+    margin-top: 39px;
+  }
+
+ .modal-write-us p {
+   margin: 0;
+   padding: 0;
+ }
 
 .modal-write-us input,
 .modal-write-us textarea {
@@ -1423,15 +1431,14 @@ line-height: 24px;
 .modal-write-us input {
   height: 38px;
   margin-top: 11px;
-  
+  margin-bottom: 14px;
 }
-
-
 
 .modal-write-us textarea {
   resize: none; 
   height: 114px;
   margin-top: 11px;
+  margin-bottom: 30px;
 }
 
 .modal ::placeholder {
@@ -1448,28 +1455,35 @@ border: none;
   border: none;
   width: 460px;
   height: 38px;
+  margin-left: 80px;
+  
  
 }
 .modal-footer {
   background-color: var(--modal-window);
-  height: 112px;
-  
+ 
+padding-top: 37px;
+height: 75px;
 }
 
 
-.clearfix::after {
+.clearfix::before {
   content: "";
   display: table;
   clear: both;
+  height: 0;
+  
 }
 
 
 .write-us-left {
   float: left;
+  
 }
 
 .write-us-right {
   float: right;
+ 
 }
 
 .write-us-left,
@@ -1480,19 +1494,63 @@ border: none;
 .modal-write-us  {
   top: 120px;
   bottom: auto;
-  width: 460px;
- padding-left: 80px;
- padding-right: 80px;
- padding-top: 46px;
-border-top: 7px solid var(--basic-red);
+  width: 620px;
+ border-top: 7px solid var(--basic-red);
+ box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
 
+.write-us-wrapper {
+  padding-left: 80px;
+  padding-right: 80px;
+}
 
+.modal-map {
+  width: 943px;
+  height: 449px;
+  border-top: 7px solid var(--basic-red);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-map img {
+  display: block;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 
+.modal-close {
+  position: absolute;
+  top: 12px;
+ right: 10px;
+   width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+  
 
 
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 25px;
+  height: 3px;
+  background-color: var(--basic-red);
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
 
+.modal-close::after {
+  transform: rotate(-45deg);
+}
 
 
  /*  Стили для каталога  */
@@ -1738,7 +1796,7 @@ font-size: 30px;
 line-height: 30px;
 background-color:var(--basic-background);
 min-height: 62px;
-padding-top: 25px;
+padding-top: 29px;
 padding-left: 30px;
 padding-right: 740;
 text-transform: uppercase;
@@ -1941,7 +1999,7 @@ label:disabled {
 
 .radio-filter-item {
   margin-top: 40px;
-  margin-bottom: 34px;
+  margin-bottom: 18px;
 }
 
 .filter-input-radio + label::before {
@@ -1978,6 +2036,7 @@ text-transform: uppercase;
 border: 1px solid var(--filter-button);
 background-color: var(--basic-white);
 padding: 10px 80px;
+
 }
 
 
@@ -2095,7 +2154,7 @@ margin: 0;
   row-gap: 18px;
   margin-top: 28px;
   padding-left: 0;
-  margin-bottom: 48px;
+  margin-bottom: 55px;
 }
 
 .catalog-list li {
@@ -2345,7 +2404,7 @@ margin-right: 10px;
 .information {
   background-color: var(--basic-background);
   margin: 0px;
-padding-top: 64px;
+padding-top: 70px;
 padding-bottom: 68px;
 }
 
@@ -2369,3 +2428,77 @@ margin: 0px;
 margin-top: 25px;
 }
 
+.modal-catalog {
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+    font-family: Cuprum, Arial, sans-serif;
+
+}
+
+.modal-busket  {
+  
+  top: 120px;
+  bottom: auto;
+  width: 620px;
+ border-top: 7px solid var(--basic-red);
+ 
+}
+
+.modal-busket-top {
+  position: relative;
+  font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+margin-left: 178px;
+margin-top: 66px;
+}
+
+
+.modal-busket-top::before {
+  position: absolute;
+  bottom:-18px;
+  left: -95px; 
+  content:"";
+  background-image: url("../img/icon-mark.svg");      
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 66px;
+  width: 66px;
+}
+
+.modal-busket-bottom {
+  margin-top: 67px;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 114px;
+  background-color: var(--modal-window);
+  display: flex;
+}
+
+.modal-busket-bottom a {
+  height: 28px;
+  padding-top: 11px;
+  padding-left: 47px;
+  padding-right: 46px;
+  margin-right: 10px;
+}
+.modal-busket-bottom button {
+  border: none;
+  background-color: var(--basic-white);
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+padding-left: 32px;
+padding-right: 31px;
+height: 38px;
+}

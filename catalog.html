@@ -123,10 +123,11 @@
     <div class="range-filter">
       <div class="range-controls">
         <div class="scale">
-          <div class="bar"></div>
+          <div class="bar" style="width: 80%; margin-left: 0%"></div>
         </div>
-        <div class="toggle toggle-min" tabindex="0"></div>
-        <div class="toggle toggle-max" tabindex="0"></div>
+        <div class="toggle toggle-min" tabindex="0" style="left: 8%"></div>
+        <div class="toggle toggle-max" tabindex="0" style="left: 75%
+      "></div>
 
       </div>
       <div class="price-controls">
@@ -528,13 +529,17 @@
 
   </footer>
 
-  <section class="busket visually-hidden">
-    <h2>Корзина</h2>
-    <img src="img/icon-mark.svg" alt=""> 
-     <p>Товар добавлен в корзину</p>
-     <a href="blank.html">Оформить заказ</a> 
-     <button type="submit">Продолжить покупки</button>
-          <button type="button"><img src="img/icon-close.svg" alt="Закрыть"></button> 
+  <section class="modal-catalog modal-busket visually-hidden">
+    <h2 class="visually-hidden">Корзина</h2>
+     
+     <p class="modal-busket-top">Товар добавлен в корзину</p>
+
+    <div class="modal-busket-bottom">
+      <a class="red-button" href="blank.html">Оформить заказ</a> 
+      <button>Продолжить покупки</button>
+    </div>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>  
+     
   </section>
 
   </body>
