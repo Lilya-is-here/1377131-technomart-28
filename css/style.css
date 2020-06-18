@@ -2363,8 +2363,8 @@ display: block;
 .catalog-button {
   display: flex;
   flex-direction: column;
-  
-}
+  margin-left: 24px;
+  }
 
 .catalog-button button{
   
@@ -2382,8 +2382,7 @@ line-height: 18px;
 
 .catalog-button-purchase {
   margin-top: 38px;
-  margin-left: 41px;
-  background-color: var(--basic-green);
+    background-color: var(--basic-green);
   color:var(--basic-white);
   border:none;
   box-shadow: inset 0px -3px 0px var(--purchase-underline);
@@ -2415,7 +2414,7 @@ position: absolute;
 
 .catalog-button-bookmark {
   margin-top: 10px;
-  margin-left: 41px;
+  
 background-color: var(--basic-white);
 color: var(--basic-grey);
 border: 3px solid var(--basic-green);
@@ -2603,3 +2602,18 @@ padding-left: 32px;
 padding-right: 31px;
 
 }
+
+/* Новый товар */
+
+   .new-product::after {
+   
+  content:"";
+    position: absolute;
+    background-image: url(../img/new-product.svg);
+    top:0px;
+    right:0px;
+    width:70px;
+     height:70px;
+  
+  }
+  
