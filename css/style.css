@@ -109,7 +109,7 @@ img {
   background-color:var(--basic-darkgrey);
   font-size: 18px;
   line-height: 24px;
-   min-height: 42px;
+  
 }
 
   
@@ -125,7 +125,6 @@ img {
 margin-bottom: 40px;
   display: grid;
   grid-template-columns:    220px 271px 450px;
-  
   width: 1200px;
   height:42px;
 }
@@ -134,6 +133,29 @@ margin-bottom: 40px;
 .main-header-logo {
   height: 47px;
   width: 220px;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  position: relative;
+  }
+
+  .main-header-logo:active {
+    background-color: var(--error);
+
+  }
+
+  .main-header-logo::before {
+    
+    position: absolute;
+     
+     content:"";
+     background-image: url("../img/logo-technomart-header.svg");            
+     background-repeat: no-repeat;
+     background-position: 0 0;
+     width:108px;
+     height:18px;
+     top:12.78px;
+     left: 55.78px;
+     
   }
 
   .header-search ::placeholder{
@@ -191,19 +213,24 @@ top:12px;
 
 .header-top-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: end;
   align-content: center;
   width: 450px;
   height: 42px;
   margin: 0px;
+  padding:0px;
 }
 
 .header-top-menu a { 
   width:150px;
   background-color: var(--basic-darkgrey);
-  padding:10px 0px;
+  padding:9px 0px;
+
   margin:0px;
     }
+
+
  
    .header-top-menu .header-top-bookmark {
      position: relative;
@@ -295,6 +322,8 @@ background-color: var(--success);
   min-width:940px;
   min-height: 60px;
   
+  
+  
 }
 
 
@@ -307,13 +336,47 @@ background-color: var(--success);
   
  display: flex;
  flex-direction: row;
- justify-content: center;
+ justify-content: flex-start;
  flex-wrap: wrap;  
   width: auto;
   padding-left: 0px;
   padding-right: 0px;
-  }
+ padding-top: 5px;
+  margin-top: 19px;
+    }
 
+.navigation-main {
+  padding-left: 52px;
+  padding-right: 31px;
+}
+.navigation-company {
+  padding-left: 27px;
+  padding-right: 24px;
+}
+.navigation-catalog {
+  padding-left: 32px;
+  padding-right: 28px;
+}
+
+.navigation-news {
+  padding-left: 32px;
+  padding-right: 29px;
+}
+
+.navigation-special-offers {
+  padding-left: 30px;
+padding-right: 28px;
+}
+
+.navigation-delivery {
+  padding-left: 27px;
+  padding-right: 30px;
+}
+
+.navigation-contacts {
+  padding-right: 47px;
+  padding-left: 28px;
+}
 
 
 .site-navigation a ,
@@ -328,16 +391,14 @@ line-height: 24px;
 
 .site-navigation a {
   background-color: var(--basic-grey);
-  padding-top:16px;
-  padding-bottom:25px;
-  padding-left: 36px;
-  padding-right: 27px;
-  margin-top: 5px;
- box-shadow: inset 0px -5px 0px var(--basic-darkgrey);
- width: auto;
+  padding-top:17px;
+  padding-bottom:21px;
+  display: block;
+  margin-top: -20px;
+  box-shadow: inset 0px -5px 0px var(--basic-darkgrey);
  
  
-  }
+ }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -427,6 +488,7 @@ background-color: var(--basic-darkgrey);
   margin-top: 42px;
   text-align: justify;
   width: auto;
+  word-wrap: normal;
    
 }
 
@@ -801,13 +863,11 @@ margin-left: 24px;
   
 }
 
-
-
 .catalog-list-wrapper {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
    grid-gap: 20px;
-   height: 318px;
+   
 }
  
 .catalog-list-main {
@@ -815,6 +875,7 @@ margin-left: 24px;
   padding-left: 0;
 margin-bottom: 70px;
 margin-top: 20px;
+box-sizing: border-box;
 }
 
 .catalog-list-main li {
@@ -822,9 +883,12 @@ margin-top: 20px;
   border:1px solid var(--additionalgrey);
   box-sizing:border-box;
   width:220px;
-  height:318px;
+  
   display: flex;
   flex-direction: column;
+  padding-left: 18px;
+  padding-right: 18px;
+  
 }
 
 .catalog-list-main .catalog-item-image {
@@ -885,6 +949,7 @@ text-transform: uppercase;
   justify-content: space-between;
   position: relative;
   padding-bottom: 5px;
+
 }
 
 .producer-list {
@@ -899,7 +964,6 @@ display: grid;
 grid-template-columns: 220px 220px 220px 220px;
 grid-template-rows: 145px 145px;
 grid-gap: 20px;
- height: 210px;
 width:940px;
 }
 
@@ -914,6 +978,7 @@ flex-wrap: wrap;
 
 .producer-list-item {
 object-fit: contain;
+display: block;
 }
 
 .producer-list li:hover,
@@ -970,7 +1035,7 @@ object-fit: contain;
 
 .services {
   background-color: var(--basic-background);
-  margin-top: 170px;
+  margin-top: 70px;
   margin-bottom: 70px;
 }
 
@@ -1149,8 +1214,9 @@ top: -60px;
   .about-company-wrapper {
     display: grid;
     grid-template-columns: 640px 300px;
-    height: 496px;
+    min-height: 496px;
     margin-bottom: -70px;
+    box-sizing: border-box;
   }
 
   .about-company h3, 
@@ -1242,7 +1308,33 @@ top: -60px;
     .main-footer-logo {
       grid-column: 1/1;
       grid-row: 1/1;
+      background-color: var(--basic-red);
+      box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+      width: 220px;
+      height: 68px;
+      position: relative;
     }
+
+    .main-footer-logo:active {
+      background-color: var(--error);
+  
+    }
+  
+    .main-footer-logo::before {
+      
+      position: absolute;
+              content:"";
+       background-image: url("../img/logo-technomart-footer.svg");            
+       background-repeat: no-repeat;
+       background-position: 0 0;
+       width:136.5px;
+       height:21.59px;
+       top:20px;
+       left: 41px;
+       
+    }
+
+
     .footer-contacts {
       grid-column: 1/1;
       grid-row: 1/1;
@@ -1263,6 +1355,7 @@ top: -60px;
         grid-column: 2/3;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         
       }
 
@@ -1563,8 +1656,8 @@ height: 75px;
   padding-right: 21px;
   width: auto;
   background-color: var(--basic-red);      
-  padding-top:10px;
-  padding-bottom:10px;           
+  padding-top:9px;
+  padding-bottom:9px;           
  }
 
 .catalog-header-top-busket::before {
@@ -1807,7 +1900,7 @@ margin-top: 20px;
   .catalog-wrapper {
     display: grid;
 grid-template-columns: 220px 700px;
-grid-template-rows: 32px 1162px;
+grid-template-rows: 32px 1fr;
 column-gap:20px;
   }
   
@@ -2154,7 +2247,7 @@ margin: 0;
   row-gap: 18px;
   margin-top: 28px;
   padding-left: 0;
-  margin-bottom: 55px;
+  padding-bottom:48px;
 }
 
 .catalog-list li {
@@ -2163,10 +2256,15 @@ margin: 0;
    border:1px solid var(--additionalgrey);
   box-sizing:border-box;
   width:220px;
-  height:318px;
+  
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  align-content: flex-start;
+  padding-left: 17px;
+  padding-right: 18px;
+  padding-bottom: 21px;
+  word-wrap: normal;
+ 
 }
 
 .catalog-item-image {
@@ -2190,9 +2288,9 @@ background-color: var(--basic-red);
 width: 121px;
 height: 28px;
 text-align: center;
-margin-left: 45px;
+margin-left: 32px;
 padding-top: 10px;
-margin-bottom: 21px;
+
 
 }
 
@@ -2224,6 +2322,7 @@ margin-right: 17px;
 padding: 0;
 margin: 0;
 display: block;
+
 
 }
 
@@ -2379,6 +2478,7 @@ margin-right: 10px;
   padding: 0;
   margin: 0;
   list-style: none;
+  padding-bottom: 59px;
  
 }
 
@@ -2404,7 +2504,7 @@ margin-right: 10px;
 .information {
   background-color: var(--basic-background);
   margin: 0px;
-padding-top: 70px;
+padding-top: 64px;
 padding-bottom: 68px;
 }
 
@@ -2459,6 +2559,7 @@ font-size: 24px;
 line-height: 30px;
 margin-left: 178px;
 margin-top: 66px;
+word-wrap: normal;
 }
 
 
@@ -2500,5 +2601,5 @@ line-height: 18px;
 text-transform: uppercase;
 padding-left: 32px;
 padding-right: 31px;
-height: 38px;
+
 }
