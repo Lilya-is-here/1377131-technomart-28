@@ -1,12 +1,16 @@
-var busketButton = document.querySelector(".catalog-button-purchase");
+ var busketButton = document.querySelectorAll(".catalog-button-purchase");
 
   var busketPopup = document.querySelector(".modal-busket");
   var busketClose = busketPopup.querySelector(".modal-close");
+
+
+  for (var i =0; i < busketButton.length; i++) {
+    busketButton[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      busketPopup.classList.add("modal-show");
   
-  busketButton.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    busketPopup.classList.add("modal-show");
-  });
+    });
+  }
 
   busketClose.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -20,4 +24,6 @@ var busketButton = document.querySelector(".catalog-button-purchase");
         busketPopup.classList.remove("modal-show");
       }
     }
-  });
+  }); 
+
+  
