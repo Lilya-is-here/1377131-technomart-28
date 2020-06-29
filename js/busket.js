@@ -1,5 +1,4 @@
  var busketButton = document.querySelectorAll(".catalog-button-purchase");
-
   var busketPopup = document.querySelector(".modal-busket");
   var busketClose = busketPopup.querySelector(".modal-close");
 
